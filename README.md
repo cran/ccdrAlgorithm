@@ -1,9 +1,9 @@
 ccdrAlgorithm
 =============
 
-[![Travis-CI Build Status](https://travis-ci.org/itsrainingdata/ccdrAlgorithm.svg?branch=master)](https://travis-ci.org/itsrainingdata/ccdrAlgorithm)
+[![Travis-CI Build Status](https://travis-ci.org/itsrainingdata/ccdrAlgorithm.svg?branch=master)](https://travis-ci.org/itsrainingdata/ccdrAlgorithm) [![](http://www.r-pkg.org/badges/version/ccdrAlgorithm)](http://www.r-pkg.org/pkg/ccdrAlgorithm) [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/ccdrAlgorithm)](http://www.r-pkg.org/pkg/ccdrAlgorithm)
 
-`ccdrAlgorithm` implements the CCDr structure learning algorithm described in [1](#references). Based on observational data, this algorithm estimates the structure of a Bayesian network (aka edges in a DAG) using penalized maximum likelihood based on L1 or concave (MCP) regularization.
+`ccdrAlgorithm` implements the CCDr structure learning algorithm described in \[[1](#references)\]. Based on observational data, this algorithm estimates the structure of a Bayesian network (aka edges in a DAG) using penalized maximum likelihood based on L1 or concave (MCP) regularization.
 
 Presently, this package consists of a single method that implements the main algorithm; more functionality will be provided in the future. To generate data from a given Bayesian network and/or simulate random networks, the following R packages are recommended:
 
