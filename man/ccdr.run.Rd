@@ -4,9 +4,20 @@
 \alias{ccdr.run}
 \title{Main CCDr Algorithm}
 \usage{
-ccdr.run(data, lambdas = NULL, lambdas.length = NULL, whitelist = NULL,
-  blacklist = NULL, gamma = 2, error.tol = 1e-04, max.iters = NULL,
-  alpha = 10, betas, sigmas = NULL, verbose = FALSE)
+ccdr.run(
+  data,
+  lambdas = NULL,
+  lambdas.length = NULL,
+  whitelist = NULL,
+  blacklist = NULL,
+  gamma = 2,
+  error.tol = 1e-04,
+  max.iters = NULL,
+  alpha = 10,
+  betas,
+  sigmas = NULL,
+  verbose = FALSE
+)
 }
 \arguments{
 \item{data}{Data as \code{\link[sparsebnUtils]{sparsebnData}} object. Must be numeric and contain no missing values.}
@@ -57,7 +68,7 @@ A \code{\link[sparsebnUtils]{sparsebnPath}} object.
 }
 \description{
 Estimate a Bayesian network (directed acyclic graph) from observational data using the
-CCDr algorithm as described in \href{http://jmlr.org/papers/v16/aragam15a.html}{Aragam and Zhou (2015)}.
+CCDr algorithm as described in \href{https://jmlr.org/papers/v16/aragam15a.html}{Aragam and Zhou (2015)}.
 }
 \details{
 Instead of producing a single estimate, this algorithm computes a solution path of estimates based

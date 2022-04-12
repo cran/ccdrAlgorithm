@@ -1,3 +1,9 @@
+# ccdrAlgorithm 0.0.6
+
+## Notes
+
+* Minor patch to fix failing CRAN check
+
 # ccdrAlgorithm 0.0.5
 
 ## Notes

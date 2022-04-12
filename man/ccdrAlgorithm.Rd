@@ -3,11 +3,10 @@
 \docType{package}
 \name{ccdrAlgorithm}
 \alias{ccdrAlgorithm}
-\alias{ccdrAlgorithm-package}
 \title{ccdrAlgorithm: CCDr Algorithm for Learning Sparse Gaussian Bayesian Networks}
 \description{
 Implements the CCDr structure learning algorithm as described in
-\href{http://arxiv.org/abs/1401.0852}{Aragam and Zhou (2015)}.
+\href{https://arxiv.org/abs/1401.0852}{Aragam and Zhou (2015)}.
 }
 \details{
 The CCDr algorithm uses sparse regularization (L1 or MCP) to produce

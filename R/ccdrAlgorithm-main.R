@@ -24,7 +24,7 @@ NULL
 #' Main CCDr Algorithm
 #'
 #' Estimate a Bayesian network (directed acyclic graph) from observational data using the
-#' CCDr algorithm as described in \href{http://jmlr.org/papers/v16/aragam15a.html}{Aragam and Zhou (2015)}.
+#' CCDr algorithm as described in \href{https://jmlr.org/papers/v16/aragam15a.html}{Aragam and Zhou (2015)}.
 #'
 #' Instead of producing a single estimate, this algorithm computes a solution path of estimates based
 #' on the values supplied to \code{lambdas} or \code{lambdas.length}. The CCDr algorithm approximates
@@ -471,7 +471,7 @@ ccdr_singleR <- function(cors,
     ### Check weights
     if(length(weights) != pp*pp) stop(sprintf("weights must have length p^2 = %d!", pp*pp))
     if(!is.numeric(weights)) stop("weights must be numeric!")
-    if(weights < -1 || weights > 1) stop("weights out of bounds!")
+    if(any(weights < -1) || any(weights > 1)) stop("weights out of bounds!")
 
     ### Check gamma
     if(!is.numeric(gamma)) stop("gamma must be numeric!")
